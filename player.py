@@ -15,6 +15,9 @@ class Player:
     def place_the_ships(self):
         pass
 
+    def fire_at_the_opponent_s_boat(self):
+        pass
+
     # ----------------Constructor-----------------------
     def __init__(self, name: str, ships_board: Board, hit_board: Board, ships: list[Ship]):
         self.name = name
