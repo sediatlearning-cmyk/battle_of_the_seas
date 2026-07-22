@@ -12,6 +12,9 @@ class Player:
         name = input("What is your name? ")
         return name
 
+    def place_the_ships(self):
+        pass
+
     # ----------------Constructor-----------------------
     def __init__(self, name: str, ships_board: Board, hit_board: Board, ships: list[Ship]):
         self.name = name
