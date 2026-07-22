@@ -8,6 +8,9 @@ from ship import Ship
 class Player:
 
     # ----------------------Methods-------------------------
+    def ask_name_of_player(self):
+        name = input("What is your name? ")
+        return name
 
     # ----------------Constructor-----------------------
     def __init__(self, name: str, ships_board: Board, hit_board: Board, ships: list[Ship]):
