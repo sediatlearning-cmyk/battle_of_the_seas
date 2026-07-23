@@ -1,14 +1,17 @@
-from dataclasses import dataclass
+from ship_type import ShipType
+from orientation import Orientation
 
 
-@dataclass
 class Ship:
+
     # -------------------Methods------------------------
 
     # ------------------Constructor-------------------
 
-    def __init__(self, ship_type: str, ship_length: int):
+    def __init__(self, ship_type: ShipType,
+                 ship_starting_position: tuple,
+                 orientation: Orientation):
         self.ship_type = ship_type
-        self.ship_length = ship_length
-
-
+        self.ship_starting_position = ship_starting_position
+        self.orientation = orientation
+        self.ship_damage_positions = []
